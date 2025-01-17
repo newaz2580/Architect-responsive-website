@@ -129,12 +129,63 @@ main{
     margin: 24px 0 32px 0;
     color: rgba(114, 114, 114, 1);
 }
+.love-feature-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgba(19, 19, 19, 1);
+  
+}
+.love-feature-description{
+    margin: 30px 0;
+}
+.love-card{
+    max-width: 586px;
+    border-radius: 8px;
+    box-shadow:0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 30px 42px 30px 30px;
+   
+}
+.love-card-title{
+    margin-bottom: 10px;
+    font-size: 1.20rem;
+    font-size: 500;
+}
+.love-card-description{
+    color: rgba(114, 114, 114, 1);
+}
+.feature-love-enjoy{
+margin-top: 130px;
+display: flex;
+gap: 54px;
+}
+.experiec-badge{
+    padding: 42px 45px;
+    background-color: #FF900E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-left: -100px;
+    margin-top: -100px;
 
+}
+.years{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ex{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 /* meadia query style */
 @media screen and (max-width: 576px) {
     .header, 
     .links,
-    .team-section
+    .team-section,
+    .feature-love-enjoy
     {
         flex-direction: column;
     }
@@ -142,13 +193,36 @@ main{
         margin: 10px;
     }
     .teams-img{
+        max-width: 342px;
         grid-template-columns: 1fr;
         margin-left: 10px;
     }
+    .teams-img img{
+        width: 100%;
+    }
+    .img-box img{
+        width: 100%;
+    }
+    .experiec-badge{
+        padding: 42px 45px;
+        background-color: #FF900E;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-top: 0;
+        margin-top: 10px;
+    
+    }
+    
+   
+
+   
     
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team-section{
+    .team-section,
+    .feature-love-enjoy{
         flex-direction: column;
     }
     .teams-img{
@@ -158,5 +232,15 @@ main{
     }
      .links li{
         margin: 10px;
+    }
+    .experiec-badge{
+        padding: 42px 45px;
+        background-color: #FF900E;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        margin-top: -200px;
+        margin-left: 0px;
+    
     }
 }
