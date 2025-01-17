@@ -302,8 +302,8 @@ color: rgba(19, 19, 19, 1);
     }
     .sponsor-img-box{
       grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    /* padding: 10px; */
 
     }
     .footer-section{
@@ -321,9 +321,7 @@ color: rgba(19, 19, 19, 1);
     
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
-        margin-left:35px;
-    }
+   
     .team-section,
     .feature-love-enjoy{
         flex-direction: column;
@@ -358,7 +356,7 @@ color: rgba(19, 19, 19, 1);
      gap: 5px;
      width: 100%;
      margin: 0;
-     margin-left: 50px;
+    
     }
     .sponsor-img-box{
         grid-template-columns: repeat(3,1fr);
