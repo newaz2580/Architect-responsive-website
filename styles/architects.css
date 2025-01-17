@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ 
+
+.work-sans-fonts{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    margin-top: 50px;
+    color: rgba(19, 19, 19, 1);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63px;
+   
+}
+.nav-links li{
+    list-style: none;
+    margin-left: 50px;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(66, 66, 66, 1);
+
+}
+.brand{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 129px;
+}
+.brand-title{
+    color: rgba(19, 19, 19, 1);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.brand-description{
+    color: #727272;
+    margin: 5px 0 10px 0;
+}
+.brand-btn{
+    text-align: center;
+}
+.btn-primary{
+    font-size: 1.20rem;
+    font-weight: 600;
+    background-color: #FF900E;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+}
+.architect-img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* meadia query style */
+@media screen and (max-width: 576px) {
+    .header, 
+    .links{
+        flex-direction: column;
+    }
+    .links li{
+        margin: 10px;
+    }
+    
+}
