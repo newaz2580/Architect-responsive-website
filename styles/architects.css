@@ -180,6 +180,76 @@ gap: 54px;
     font-size: 1.5rem;
     font-weight: 500;
 }
+.fact-cards{
+    max-width: 242px;
+    max-height: 242px;
+    border-radius: 8px;
+    padding: 35px 37px 60px 36px;
+    border: 1px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.some-fact-title{
+margin-top: 130px;
+font-size: 2.9rem;
+font-weight: bold;
+color: rgba(19, 19, 19, 1);
+}
+.some-fact-description{
+    margin-top: 24px;
+    margin-bottom: 100px;
+    color: rgba(114, 114, 114, 1);
+}
+.fact-card{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ margin: 0 24px;
+ gap: 124px;
+}
+.number{
+    font-size: 2.9rem;
+    color: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.name{
+    font-size: 1.2rem;
+    color: #727272;
+}
+.sponsors-section{
+    text-align: center;
+    margin-top: 180px;
+}
+.sponsor-title{
+    margin-bottom: 24px;
+    color: rgba(19, 19, 19, 1);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.sponsor-details{
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 50px;
+}
+.sponsor-img-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 155px;
+    filter: grayscale(100%);
+}
+.footer-section{
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+    margin-top: 130px;
+    margin-bottom: 156px;
+    background-color: #FFF4E7;
+    margin-left: 240px;
+    margin-right: 240px;
+    padding: 38px 0;
+}
 /* meadia query style */
 @media screen and (max-width: 576px) {
     .header, 
@@ -203,6 +273,9 @@ gap: 54px;
     .img-box img{
         width: 100%;
     }
+    .some-fact-title{
+        text-align: center;
+    }
     .experiec-badge{
         padding: 42px 45px;
         background-color: #FF900E;
@@ -210,10 +283,37 @@ gap: 54px;
         border: none;
         border-radius: 8px;
         margin-left: 10px;
-        margin-top: 0;
+        margin-top: 10;
         margin-top: 10px;
     
     }
+    .some-fact-section{
+        text-align: justify;
+        padding: 5px;
+
+    }
+    .fact-card{
+     grid-template-columns: repeat(2, 1fr);
+     gap: 5px;
+     width: 100%;
+     margin: 0 0px;
+     
+    
+    }
+    .sponsor-img-box{
+      grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+    }
+    .footer-section{
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        padding: 10px;
+    }
+ 
     
    
 
@@ -221,6 +321,9 @@ gap: 54px;
     
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        margin-left:35px;
+    }
     .team-section,
     .feature-love-enjoy{
         flex-direction: column;
@@ -243,4 +346,21 @@ gap: 54px;
         margin-left: 0px;
     
     }
+    .img-box img{
+        width: 100%;
+    }
+    .some-fact-section{
+        text-align: center;
+        padding: 5px;
+    }
+    .fact-card{
+     grid-template-columns: repeat(2, 1fr);
+     gap: 5px;
+     width: 100%;
+     margin: 0;
+     margin-left: 50px;
+    }
+    .sponsor-img-box{
+        grid-template-columns: repeat(3,1fr);
+      }
 }
